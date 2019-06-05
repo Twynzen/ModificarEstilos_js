@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Modificando Estilos de los elementos</title>
+    <style>
+    .thumb{
+      width: 200px;
+      transition: 300ms all ease;
+    }
+    .grande{
+      width: 400px;
+    }
+    .titulo{
+      border: 1px solid navy;
+      background: #ccc;
+      padding: 10px;
+    }
+    .tituloGrande{
+      font-size: 60px
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1 id="encabezado" class="">SOY UN ENCABEZADO </h1>
+
+    <script>
+
+      var encabezado = document.getElementById("encabezado");
+
+      encabezado.className = "titulo tituloGrande";
+
+      encabezado.style.color = "red";
+      encabezado.style.background = "black";
+      encabezado.style.fontFamily = "20px";
+
+      encabezado.className = encabezado.className.replace("tituloGrande","");
+
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
